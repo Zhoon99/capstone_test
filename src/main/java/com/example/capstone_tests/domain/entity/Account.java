@@ -21,13 +21,16 @@ public class Account extends BaseEntity implements Serializable {
     private Long id;
 
     @Column(unique = true, nullable = false)
-    private String email;
-
-    @Column
     private String username;
 
     @Column
     private String password;
+
+    @Column
+    private String nickname;
+
+    @Column
+    private String email;
 
     // OAuth를 위해 구성한 추가 필드 2개
     @Column

@@ -1,15 +1,11 @@
 package com.example.capstone_tests.controller.user;
 
-import com.example.capstone_tests.domain.dto.AccountDto;
+import com.example.capstone_tests.domain.dto.vo.AccountDto;
 import com.example.capstone_tests.service.UserService;
 import lombok.RequiredArgsConstructor;
-import org.modelmapper.ModelMapper;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-
-import java.security.Principal;
 
 @Controller
 @RequiredArgsConstructor

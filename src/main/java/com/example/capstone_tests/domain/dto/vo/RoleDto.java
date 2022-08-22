@@ -1,5 +1,5 @@
 
-package com.example.capstone_tests.domain.dto;
+package com.example.capstone_tests.domain.dto.vo;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -1,6 +1,6 @@
 package com.example.capstone_tests.controller.admin;
 
-import com.example.capstone_tests.domain.dto.RoleDto;
+import com.example.capstone_tests.domain.dto.vo.RoleDto;
 import com.example.capstone_tests.domain.entity.Role;
 import com.example.capstone_tests.service.RoleService;
 import lombok.RequiredArgsConstructor;

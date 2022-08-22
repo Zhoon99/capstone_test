@@ -1,6 +1,6 @@
 package com.example.capstone_tests.service;
 
-import com.example.capstone_tests.domain.dto.AccountDto;
+import com.example.capstone_tests.domain.dto.vo.AccountDto;
 import com.example.capstone_tests.domain.entity.Account;
 
 import java.util.List;

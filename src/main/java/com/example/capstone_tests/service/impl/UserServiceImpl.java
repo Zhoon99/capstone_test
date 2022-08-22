@@ -1,6 +1,6 @@
 package com.example.capstone_tests.service.impl;
 
-import com.example.capstone_tests.domain.dto.AccountDto;
+import com.example.capstone_tests.domain.dto.vo.AccountDto;
 import com.example.capstone_tests.domain.entity.Account;
 import com.example.capstone_tests.domain.entity.Role;
 import com.example.capstone_tests.repository.RoleRepository;

@@ -1,7 +1,7 @@
 package com.example.capstone_tests.controller.admin;
 
 
-import com.example.capstone_tests.domain.dto.AccountDto;
+import com.example.capstone_tests.domain.dto.vo.AccountDto;
 import com.example.capstone_tests.domain.entity.Account;
 import com.example.capstone_tests.domain.entity.Role;
 import com.example.capstone_tests.service.RoleService;

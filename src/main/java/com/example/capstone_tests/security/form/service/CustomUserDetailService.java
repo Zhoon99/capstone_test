@@ -22,11 +22,11 @@ public class CustomUserDetailService implements UserDetailsService {
 
     @Override
     @Transactional
-    public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
-        Account account = userRepository.findByEmail(email);
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        Account account = userRepository.findByUsername(username);
         if (account == null) {
-            if (userRepository.countByEmail(email) == 0) {
-                throw new UsernameNotFoundException("No user found with email: " + email);
+            if (userRepository.countByUsername(username) == 0) {
+                throw new UsernameNotFoundException("No user found with email: " + username);
             }
         }
         List<GrantedAuthority> collect = account.getUserRoles()

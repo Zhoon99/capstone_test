@@ -1,4 +1,4 @@
-package com.example.capstone_tests.domain.dto;
+package com.example.capstone_tests.domain.dto.vo;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -15,9 +15,10 @@ import java.util.List;
 public class AccountDto {
 
     private Long id;
-    private String email;
     private String username;
     private String password;
+    private String nickname;
+    private String email;
     private List<String> roles;
 
     private String provider;

@@ -10,10 +10,8 @@ import java.util.LinkedHashSet;
 import java.util.Set;
 
 @Entity
-@Table(name = "ROLE")
-@Getter
-@Setter
-@ToString(exclude = {"users","resourcesSet"})
+@Data
+@ToString(exclude = {"accounts"})
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
@@ -27,9 +25,6 @@ public class Role implements Serializable {
 
     @Column(name = "role_name")
     private String roleName;
-
-    @Column(name = "role_desc")
-    private String roleDesc;
 
     @ManyToMany(fetch = FetchType.LAZY, mappedBy = "userRoles")
     private Set<Account> accounts = new HashSet<>();
